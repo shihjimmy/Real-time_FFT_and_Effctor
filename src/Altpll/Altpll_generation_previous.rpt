@@ -1,0 +1,90 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\NTUEE\g3f\dclab\final_project\Quartus\Altpll.qsys --block-symbol-file --output-directory=D:\NTUEE\g3f\dclab\final_project\fpga\Altpll --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Quartus/Altpll.qsys
+Progress: Reading input file
+Progress: Adding Rsa_Wrapper_0 [Rsa_Wrapper 1.0]
+Progress: Parameterizing module Rsa_Wrapper_0
+Progress: Adding altpll_0 [altpll 15.0]
+Progress: Parameterizing module altpll_0
+Progress: Adding altpll_1 [altpll 15.0]
+Progress: Parameterizing module altpll_1
+Progress: Adding clk_0 [clock_source 15.0]
+Progress: Parameterizing module clk_0
+Progress: Adding uart_0 [altera_avalon_uart 15.0]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal threshold_gate has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal threshold_comp has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal ratio has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal makeup has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Rsa_Wrapper_0.avalon_streaming_source must be connected to an Avalon-ST sink
+Warning: Altpll.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_0: altpll_0.c2_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_1: altpll_1.areset_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_1: altpll_1.locked_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_1: altpll_1.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.uart_0: Interrupt sender uart_0.irq is not connected to an interrupt receiver
+Warning: Altpll.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: Altpll.altpll_1: altpll_1.pll_slave must be connected to an Avalon-MM master
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\NTUEE\g3f\dclab\final_project\Quartus\Altpll.qsys --synthesis=VERILOG --output-directory=D:\NTUEE\g3f\dclab\final_project\fpga\Altpll\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Quartus/Altpll.qsys
+Progress: Reading input file
+Progress: Adding Rsa_Wrapper_0 [Rsa_Wrapper 1.0]
+Progress: Parameterizing module Rsa_Wrapper_0
+Progress: Adding altpll_0 [altpll 15.0]
+Progress: Parameterizing module altpll_0
+Progress: Adding altpll_1 [altpll 15.0]
+Progress: Parameterizing module altpll_1
+Progress: Adding clk_0 [clock_source 15.0]
+Progress: Parameterizing module clk_0
+Progress: Adding uart_0 [altera_avalon_uart 15.0]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal threshold_gate has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal threshold_comp has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal ratio has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Signal makeup has unknown type readdata
+Warning: Altpll.Rsa_Wrapper_0.avalon_streaming_source: Rsa_Wrapper_0.avalon_streaming_source must be connected to an Avalon-ST sink
+Warning: Altpll.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_0: altpll_0.c2_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_1: altpll_1.areset_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_1: altpll_1.locked_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.altpll_1: altpll_1.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: Altpll.uart_0: Interrupt sender uart_0.irq is not connected to an interrupt receiver
+Warning: Altpll.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: Altpll.altpll_1: altpll_1.pll_slave must be connected to an Avalon-MM master
+Info: Altpll: Generating Altpll "Altpll" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master Rsa_Wrapper_0.avalon_master_0 and slave uart_0.s1 because the master has address signal 5 bit wide, but the slave is 3 bit wide.
+Info: Interconnect is inserted between master Rsa_Wrapper_0.avalon_master_0 and slave uart_0.s1 because the master has readdata signal 32 bit wide, but the slave is 16 bit wide.
+Info: Interconnect is inserted between master Rsa_Wrapper_0.avalon_master_0 and slave uart_0.s1 because the master has writedata signal 32 bit wide, but the slave is 16 bit wide.
+Info: Interconnect is inserted between master Rsa_Wrapper_0.avalon_master_0 and slave uart_0.s1 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Warning: Altpll: "No matching role found for uart_0:s1:dataavailable (dataavailable)"
+Warning: Altpll: "No matching role found for uart_0:s1:readyfordata (readyfordata)"
+Info: Rsa_Wrapper_0: "Altpll" instantiated Rsa_Wrapper "Rsa_Wrapper_0"
+Info: altpll_0: "Altpll" instantiated altpll "altpll_0"
+Info: altpll_1: "Altpll" instantiated altpll "altpll_1"
+Info: uart_0: Starting RTL generation for module 'Altpll_uart_0'
+Info: uart_0:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=Altpll_uart_0 --dir=C:/Users/USER/AppData/Local/Temp/alt9350_5651960377478681957.dir/0011_uart_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt9350_5651960377478681957.dir/0011_uart_0_gen//Altpll_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_0: Done RTL generation for module 'Altpll_uart_0'
+Info: uart_0: "Altpll" instantiated altera_avalon_uart "uart_0"
+Info: mm_interconnect_0: "Altpll" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "Altpll" instantiated altera_reset_controller "rst_controller"
+Info: Rsa_Wrapper_0_avalon_master_0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "Rsa_Wrapper_0_avalon_master_0_translator"
+Info: uart_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "uart_0_s1_translator"
+Info: Altpll: Done "Altpll" with 9 modules, 11 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
