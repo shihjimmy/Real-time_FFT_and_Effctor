@@ -1,2 +1,2 @@
 # Real-time_FFT_and_Effctor_on_music
-Digital circuit final project
+## Digital circuit lab final project  
