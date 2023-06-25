@@ -1,5 +1,5 @@
-# Real-time_FFT_and_Effctor
-## final project of NTUEE digital circuit lab
+# Real-time FFT_and Effctor
+## Final Project from NTUEE digital circuit lab
 ### What can it do
 * we provide a python GUI interface that can be used to read music
 * you can check FFT result on the screen
